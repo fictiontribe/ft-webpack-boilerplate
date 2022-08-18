@@ -4,7 +4,7 @@ const html = {
   test: /\.(html)$/,
   use: [
     {
-      loader: 'html-loader',
+      loader: "html-loader",
     },
   ],
 };
@@ -25,9 +25,39 @@ const fontsAndSvgs = {
   type: "asset/inline",
 };
 
-const styles = {
-  test: /\.(scss|css)$/,
-  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
+// Style loaders
+const styleLoader = {
+  loader: "style-loader",
 };
 
-module.exports = [html, javascript, images, fontsAndSvgs, styles];
+const cssLoader = {
+  loader: "css-loader",
+};
+
+const postcssLoader = {
+  loader: "postcss-loader",
+  options: {
+    postcssOptions: {
+      plugins: [require("autoprefixer")()],
+    },
+  },
+};
+
+const css = {
+  test: /\.css$/,
+  use: [styleLoader, cssLoader, postcssLoader],
+};
+
+const sass = {
+  test: /\.s[c|a]ss$/,
+  use: [
+    styleLoader,
+    cssLoader,
+    postcssLoader,
+    {
+      loader: "sass-loader",
+    },
+  ],
+};
+
+module.exports = [html, javascript, images, fontsAndSvgs, css, sass];
