@@ -4,21 +4,20 @@ const path = require("path");
 // Optimization
 const TerserPlugin = require("terser-webpack-plugin"); //JS
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin"); //Images
-const { extendDefaultPlugins } = require("svgo");
 
 //External JS
 const loaders = require("./webpack.loaders");
 const plugins = require("./webpack.plugins");
-const paths = require("./paths");
+const config = require("./site.config");
 
 module.exports = {
   entry: [
-    paths.src + "/javascripts/index.js",
-    paths.src + "/stylesheets/styles.scss",
+    config.paths.src + "/javascripts/index.js",
+    config.paths.src + "/stylesheets/styles.scss",
   ],
 
   output: {
-    path: paths.dist,
+    path: config.paths.dist,
     publicPath: '/',
     filename: "[name].bundle.js",
   },
@@ -59,7 +58,7 @@ module.exports = {
   mode: "development",
   devServer: {
     static: {
-      directory: paths.src,
+      directory: config.paths.src,
       watch: true,
       serveIndex: true,
     },
