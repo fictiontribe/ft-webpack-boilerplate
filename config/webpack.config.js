@@ -1,18 +1,27 @@
 //Dependencies
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 //External JS
 const loaders = require("./webpack.loaders");
 const plugins = require("./webpack.plugins");
+const paths = require('./paths')
 
 module.exports = {
+
   entry: [
-    path.join(__dirname, "../src/js/index.js"),
-    path.join(__dirname, "../src/stylesheets/styles.scss"),
+    paths.src + "javascripts/index.js",
+    paths.src + "../src/stylesheets/styles.scss",
   ],
+
   output: {
-    path: path.resolve(__dirname, "../dist"),
+    path: paths.dist,
     filename: "[name].bundle.js",
+  },
+
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
 
   plugins,
@@ -20,7 +29,7 @@ module.exports = {
   mode: "development",
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "../src"),
+      directory: paths.src,
       watch: true,
       serveIndex: true,
     },

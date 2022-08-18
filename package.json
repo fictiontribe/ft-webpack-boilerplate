@@ -5,8 +5,9 @@
   "homepage": "https://fictiontribe.com",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
+    "deploy": "surge --project ./dist/ --domain test.surge.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fiction Tribe",
@@ -24,6 +25,8 @@
     "postcss-preset-env": "^7.8.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
+    "surge": "^0.23.1",
+    "terser-webpack-plugin": "^5.3.5",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.0"

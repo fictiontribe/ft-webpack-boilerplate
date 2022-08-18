@@ -1,0 +1,11 @@
+.sixteen-nine {
+  /* New CSS implementation with limited support */
+  aspect-ratio: auto 16/9; 
+  /* Fallback for all other browsers */
+  /* 16/9 = 1.77 */
+  max-width: 177vh;
+  /* height:width ratio 9/16 = 0.5625 */
+  height: 56.25vw;
+  max-height: 100vh;
+  width: 100%;
+}

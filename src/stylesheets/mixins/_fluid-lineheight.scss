@@ -1,0 +1,25 @@
+@mixin fluid-lineheight($minFont, $maxFont, $minBreakpoint, $maxBreakpoint) {
+  /* Define variable for media query */
+  $maxLessOne: $maxBreakpoint - 1;
+
+  /* Define variable for fallback */
+  $avg: ($maxFont + $minFont) / 2;
+
+  /* Base font size */
+  line-height: #{$minFont}px;
+
+  @media (min-width: #{$minBreakpoint}px) and (max-width: #{$maxLessOne}px) {
+    /* Adds a fallback for unsupported browsers */
+    line-height: #{$avg}px;
+
+    /* The fluid typography magic 🌟  */
+    line-height: calc(
+      #{$minFont}px + (#{$maxFont} - #{$minFont}) * (100vw - #{$minBreakpoint}px) /
+        (#{$maxBreakpoint} - #{$minBreakpoint})
+    );
+  }
+
+  @media (min-width: #{$maxBreakpoint}px) {
+    line-height: #{$maxFont}px;
+  }
+}
