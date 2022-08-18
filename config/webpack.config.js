@@ -18,7 +18,7 @@ module.exports = {
 
   output: {
     path: config.paths.dist,
-    publicPath: '/',
+    publicPath: "/",
     filename: "[name].bundle.js",
   },
 
@@ -55,7 +55,9 @@ module.exports = {
 
   plugins,
 
-  mode: "development",
+  mode: ["production", "development"].includes(config.env)
+    ? config.env
+    : "development",
   devServer: {
     static: {
       directory: config.paths.src,

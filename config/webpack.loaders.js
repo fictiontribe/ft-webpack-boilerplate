@@ -1,5 +1,7 @@
-//Webpack loaders
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const config = require("./site.config");
 
+//Webpack loaders
 const html = {
   test: /\.(html)$/,
   use: [
@@ -45,13 +47,17 @@ const postcssLoader = {
 
 const css = {
   test: /\.css$/,
-  use: [styleLoader, cssLoader, postcssLoader],
+  use: [
+    config.env === "production" ? MiniCssExtractPlugin.loader : styleLoader,
+    cssLoader,
+    postcssLoader,
+  ],
 };
 
 const sass = {
   test: /\.s[c|a]ss$/,
   use: [
-    styleLoader,
+    config.env === "production" ? MiniCssExtractPlugin.loader : styleLoader,
     cssLoader,
     postcssLoader,
     {
