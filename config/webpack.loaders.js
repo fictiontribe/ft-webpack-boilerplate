@@ -1,5 +1,14 @@
 //Webpack loaders
 
+const html = {
+  test: /\.(html)$/,
+  use: [
+    {
+      loader: 'html-loader',
+    },
+  ],
+};
+
 const javascript = {
   test: /\.js$/,
   exclude: /node_modules/,
@@ -21,4 +30,4 @@ const styles = {
   use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
 };
 
-module.exports = [javascript, images, fontsAndSvgs, styles];
+module.exports = [html, javascript, images, fontsAndSvgs, styles];
