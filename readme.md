@@ -1,5 +1,5 @@
 # ft-webpack-boilerplate
-A structured agency landing page boilerplate with webpack. <br/>
+A creative agency landing page boilerplate with webpack. <br/>
 ## Installation
 Clone the boilerplate:
 ```

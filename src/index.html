@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>"/>=
-    <%= htmlWebpackPlugin.options.charset %>
-    <%= htmlWebpackPlugin.options.viewport %>
-  </head>
 
-  <body>
-    <section class="ft-boilerplate">
-      <img src="./images/ft-logo.png">
-      <h1><%= htmlWebpackPlugin.options.title %></h1>
-    </section>
-  </body>
+<head>
+
+  <!-- Title and Meta Tags -->
+  <title>${require("../config/site.config.js").title}</title>
+  <meta name="description" content="${require('../config/site.config.js').title}" />
+  ${require('../config/site.config.js').charset ? `<meta charset="${require('../config/site.config.js').charset}">` : ""}
+  ${require('../config/site.config.js').viewport ? require('../config/site.config.js').viewport : ""}
+
+  <!-- Open Graph / Facebook -->
+  ${require('../config/site.config.js').ogType ? `<meta property="og:type" content="${require('../config/site.config.js').ogType}">` : ""}
+  ${require('../config/site.config.js').ogTitle ? `<meta property="og:title" content="${require('../config/site.config.js').ogTitle}">` : ""}
+  ${require('../config/site.config.js').ogDescription ? `<meta property="og:description" content="${require('../config/site.config.js').ogDescription}">` : ""}
+  ${require('../config/site.config.js').ogImageLink ? `<meta property="og:image" content="${require('../config/site.config.js').ogImageLink}">` : ""}
+
+  <!-- Twitter -->
+  ${require('../config/site.config.js').ogTwitterCard ? `<meta property="twitter:card" content="${require('../config/site.config.js').ogTwitterCard}">` : ""}
+  ${require('../config/site.config.js').ogTwitterTitle ? `<meta property="twitter:title" content="${require('../config/site.config.js').ogTwitterTitle}">` : ""}
+  ${require('../config/site.config.js').ogTwitterDescription ? `<meta property="twitter:description" content="${require('../config/site.config.js').ogTwitterDescription}">` : ""}
+  ${require('../config/site.config.js').ogTwitterImage ? `<meta property="twitter:image" content="${require('../config/site.config.js').ogTwitterImage}">` : ""}
+
+</head>
+
+<body>
+
+  <!-- Add your code here -->
+
+  <section class="ft-boilerplate">
+    <img src="./images/ft-logo.png">
+    <h1>Fiction Tribe Webpack v5 Boilerplate</h1>
+  </section>
+
+  <!-- End your code -->
+
+</body>
 
 </html>
