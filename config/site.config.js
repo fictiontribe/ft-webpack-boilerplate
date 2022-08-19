@@ -17,7 +17,7 @@ const config = {
   ogTwitterTitle: "Fiction Tribe Webpack v5 Boilerplate",
   ogTwitterDescription: "A creative agency landing page boilerplate with webpack.",
   ogTwitterImage: "https://picsum.photos/1200/630",
-  
+
   env: process.env.NODE_ENV, //Development or Production
   
   //Default directories
