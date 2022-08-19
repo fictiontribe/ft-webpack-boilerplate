@@ -1,0 +1,18 @@
+// Font family variables
+$GidoleRegular: "Gidole Regular";
+
+// Define font families and font sizes
+.ft-boilerplate {
+  h1 {
+    font-family: $GidoleRegular;
+    font-size: 32px;
+  }
+}
+
+// Define Font Faces
+@font-face {
+  font-family: "Gidole Regular";
+  src: url("../fonts/Gidole-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

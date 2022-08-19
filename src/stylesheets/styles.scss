@@ -1,4 +1,6 @@
-.hello-world {
+@import "fonts";
+
+.ft-boilerplate {
   display: flex;
   width: 100%;
   height: 100%;
@@ -10,5 +12,4 @@
   background-color: #1d244e;
   color: white;
   font-weight: bold;
-  font-size: 22px;
 }
