@@ -1,18 +1,23 @@
-# Fiction Tribe Webpack V5 Boilerplate
-
-A landing page boilerplate with webpack. <br/>
+# ft-webpack-boilerplate
+A structured agency landing page boilerplate with webpack. <br/>
 ## Installation
-
-Use Node Package Manager to install boilerplate dependencies:
+Clone the boilerplate:
+```
+git clone https://github.com/fictiontribe/ft-webpack-boilerplate.git
+```
+and use Node Package Manager to install dependencies:
 
 ```
 npm install
 ```
 
 ## Features
-* Preloaded with SASS and GSAP
-* Optimization for Javascript, CSS, and static assets
+* Organize and structure landing page development
+* Preload project with SASS and GSAP
+* Development and production build processes
+* Optimize Javascript, CSS, and static assets
 * Reusable mixins
+* Reusable GSAP animations
 * Surge deploy
 
 ## Usage
