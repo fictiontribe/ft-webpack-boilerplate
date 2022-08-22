@@ -3,8 +3,8 @@ const path = require("path");
 const config = {
   title: "Fiction Tribe Webpack v5 Boilerplate", //Title
   description: "A creative agency landing page boilerplate with webpack.", //Meta Description
-  template: path.resolve(__dirname, "../src/index.html"), //input file
-  filename: "index.html", // output file
+  template: path.resolve(__dirname, "../src/index.html"), //Input file
+  filename: "index.html", // Output file
   charset: 'utf-8', //Meta tag injected into HTML
   viewport: '<meta name="viewport" content="width=device-width, initial-scale=1">', //Meta tag injected into HTML
   // OG Meta data (Facebook)
@@ -18,6 +18,10 @@ const config = {
   ogTwitterDescription: "A creative agency landing page boilerplate with webpack.",
   ogTwitterImage: "https://picsum.photos/1200/630",
 
+  // Analytics
+  googleAnalyticsId: "", //G-XXXXXXXXXX
+  googleTagManagerId: "", //GTM-XXXXXXX
+
   env: process.env.NODE_ENV, //Development or Production
   
   //Default directories
@@ -26,6 +30,7 @@ const config = {
     dist: path.resolve(__dirname, "../dist"), // Production build files
     public: path.resolve(__dirname, "../public"), // Static files that get copied to build folder
   },
+
   staging: "/REPLACE-ME", //Surge staging site
 
 };

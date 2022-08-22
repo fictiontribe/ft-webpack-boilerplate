@@ -6,6 +6,9 @@ section.ft-boilerplate {
   h1 {
     font-family: $GidoleRegular;
     font-size: 32px;
+    @media(max-width: 680px) {
+      font-size: 24px;
+    }
   }
 }
 
