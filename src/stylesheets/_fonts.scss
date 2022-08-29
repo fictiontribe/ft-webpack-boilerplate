@@ -4,37 +4,36 @@ $GilroyBold: "Gilroy Bold";
 $GilroyExtraBold: "Gilroy ExtraBold";
 $GilroyLight: "Gilroy Light";
 
-
 // Define font families and font sizes
 section {
-
   h1 {
     font-family: $GilroyExtraBold;
     font-size: 55px;
-    @media(max-width: 1024px) {
+    @media (max-width: 1024px) {
       font-size: 34px;
     }
-    @media(max-width: 680px) {
-      font-size: 24px;
+    @media (max-width: 680px) {
+      font-size: 32px;
     }
   }
   h2 {
     font-family: $GilroyExtraBold;
     font-size: 45px;
-    @media(max-width: 1024px) {
-      font-size: 25px;
+    @media (max-width: 1024px) {
+      font-size: 28px;
     }
-    @media(max-width: 680px) {
-      font-size: 20px;
+    @media (max-width: 680px) {
+      font-size: 26px;
+      line-height: 1.2em;
     }
   }
   h3 {
     font-family: $GilroyExtraBold;
     font-size: 22px;
-    @media(max-width: 1024px) {
+    @media (max-width: 1024px) {
       font-size: 18px;
     }
-    @media(max-width: 680px) {
+    @media (max-width: 680px) {
       font-size: 16px;
     }
   }
@@ -42,32 +41,33 @@ section {
   p {
     font-family: $GilroyLight;
     font-size: 20px;
-    @media(max-width: 1024px) {
+    @media (max-width: 1024px) {
       font-size: 16px;
     }
-    @media(max-width: 680px) {
+    @media (max-width: 680px) {
       font-size: 16px;
-    }
-  }
-.grid-item {
-  p {
-    font-family: $GilroyLight;
-    font-size: 18px;
-    line-height: 1.5em;
-    @media(max-width: 1024px) {
-      font-size: 16px;
-    }
-    @media(max-width: 680px) {
-      font-size: 16px;
+      line-height: 1.5em;
     }
   }
-}
+  .grid-item {
+    p {
+      font-family: $GilroyLight;
+      font-size: 18px;
+      line-height: 1.5em;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+      @media (max-width: 680px) {
+        font-size: 16px;
+      }
+    }
+  }
 
   button {
     font-family: $GilroyExtraBold;
     font-size: 18px;
     cursor: pointer;
-    @media(max-width: 680px) {
+    @media (max-width: 680px) {
       font-size: 16px;
     }
   }
@@ -78,6 +78,14 @@ footer {
   p {
     font-family: $GilroyRegular;
     font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .scroll-to-top {
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 

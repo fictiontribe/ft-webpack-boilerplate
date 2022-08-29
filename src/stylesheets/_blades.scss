@@ -1,10 +1,15 @@
 $LightBlue: #23c9ff;
 $Red100: rgba(220, 0, 0, 0.75);
 $Red200: rgba(220, 0, 0, 0.85);
+$Red300: #ee0000;
 
 // Utilities
 .text-blue {
   color: $LightBlue;
+}
+
+.text-red {
+  color: $Red300;
 }
 
 body {
@@ -27,7 +32,22 @@ section {
   top: 25px;
   left: 25px;
   width: 120px;
+  opacity: 0.8;
   height: 120px;
+  @media(max-width: 768px) {
+    width: 90px;
+    height: 90px;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+//
+.language-bash {
+  @media(max-width: 768px) {
+    white-space: pre-line;
+  }
+
 }
 
 .svg-wrapper {
@@ -36,19 +56,30 @@ section {
   width: calc(100% - 300px);
   justify-content: center;
   align-items: center;
+  @media(max-width: 768px) {
+    width: calc(100% - 40px);
+  }
 }
 
 section#features {
   padding: 80px 125px;
   text-align: center;
+  @media(max-width:768px) {
+    padding: 35px 40px;
+  }
   .features-grid {
     display: grid;
     row-gap: 40px;
     column-gap: 80px;
-
     grid-template-columns: repeat(3, minmax(0, 1fr));
     h3 {
       margin-bottom: 15px;
+    }
+    @media(max-width: 1024px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media(max-width: 680px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .grid-item {
       h3 {
@@ -72,6 +103,13 @@ section#technology {
     margin-top: 30px;
     flex-direction: row;
     justify-content: center;
+    @media(max-width:992px) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+  @media(max-width:768px) {
+    padding: 35px 40px;
   }
 }
 
@@ -83,7 +121,10 @@ section#about {
 }
 
 section#contact {
-  margin: 80px 125px;
+  margin: 80px 125px !important;
+  @media(max-width:768px) {
+    margin: 70px 20px !important;
+  }
   text-align: center;
   .technology-row {
   }
@@ -107,14 +148,26 @@ section#intro {
   flex-direction: row;
   justify-content: center;
   margin-left: 125px;
-  margin-right: 75px;
+  margin-right: 125px;
   margin-top: 100px;
   align-items: center;
+  @media (max-width: 1024px) {
+    margin-left: 75px;
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-top: 120px;
+    margin-right: 20px;
+  }
   .content-left {
     display: flex;
     margin-top: 20px;
     max-width: 50%;
     flex-direction: column;
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
   }
   p {
     margin-top: 20px;
@@ -127,6 +180,13 @@ section#intro {
   flex-direction: row;
   margin-top: 40px;
   column-gap: 20px;
+  @media (max-width: 768px) {
+    // flex-direction: column-reverse;
+    // align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    row-gap: 20px;
+  }
 }
 
 .section-heading {
@@ -135,21 +195,36 @@ section#intro {
     margin-top: 20px;
   }
 }
+#contact {
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+}
 .button-container {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+  }
 }
 
 .code-container {
   margin-top: 40px;
   text-align: left;
+  width: 50%;
   display: grid;
   column-gap: 0px;
   row-gap: 20px;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   @media (min-width: 1024px) {
     // min-width: 800px;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 }
 
@@ -166,6 +241,9 @@ section#intro {
   max-width: fit-content;
   padding: 10px 18px;
   transition: all 0.3s;
+  @media(max-width: 768px) {
+    margin-top: 20px;
+  }
   svg {
     width: 15px;
     fill: #fff;
@@ -192,6 +270,14 @@ section#intro {
   padding-left: 125px;
   padding-right: 125px;
   padding-bottom: 4rem;
+  @media(max-width: 768px) {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    .scroll-to-top {
+      margin-top: 15px;
+    }
+  }
 
   .scroll-to-top {
     text-align: center;
@@ -204,5 +290,22 @@ section#intro {
       margin-left: 7px;
       fill: $LightBlue;
     }
+  }
+}
+.github-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media(max-width: 768px) {
+    right: 20px;
+    bottom: 20px;
+    img {
+    width: 45px;
+    height: 45px;
+  }
   }
 }
