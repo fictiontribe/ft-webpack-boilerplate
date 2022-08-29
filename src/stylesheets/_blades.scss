@@ -13,8 +13,9 @@ $Red300: #ee0000;
 }
 
 body {
-  background-color: #1d244e;
-  color: white;
+  background: rgb(29,36,78);
+  background: linear-gradient(180deg, rgba(29,36,78,1) 85%, rgba(238,0,0,1) 100%);
+        color: white;
 }
 
 section {
@@ -277,7 +278,7 @@ section#intro {
 
 // Footer.html
 #footer {
-  background-color: $Red100;
+  // background-color: $Red100;
   padding-top: 4rem;
   padding-left: 125px;
   padding-right: 125px;
