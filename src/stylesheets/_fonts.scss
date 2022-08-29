@@ -7,6 +7,7 @@ $GilroyLight: "Gilroy Light";
 // Define font families and font sizes
 section {
   h1 {
+    white-space: normal;
     font-family: $GilroyExtraBold;
     font-size: 55px;
     @media (max-width: 1024px) {
