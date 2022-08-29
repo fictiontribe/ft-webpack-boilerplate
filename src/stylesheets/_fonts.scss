@@ -76,7 +76,7 @@ section {
 // Footer
 footer {
   p {
-    font-family: $GilroyRegular;
+    font-family: $GilroyBold;
     font-size: 18px;
     @media (max-width: 768px) {
       font-size: 14px;
@@ -89,6 +89,17 @@ footer {
   }
 }
 
+btn {
+  font-family: $GilroyRegular;
+}
+
+.language-bash {
+  font-family: $GilroyBold;
+  font-size: 18px;
+  @media(max-width: 768px) {
+    font-size: 15px;
+  }
+}
 // Define Font Faces
 @font-face {
   font-family: "Gilroy Light";

@@ -37,7 +37,7 @@ export class GsapReusable {
         autoAlpha: 0,
         y: 25,
         duration: 0.75,
-        stagger: 0.2,
+        stagger: 0.15,
       });
     });
   }
