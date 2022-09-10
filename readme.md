@@ -47,21 +47,29 @@ Deploy to surge:
 ```
 npm run deploy
 ```
-
-
-
+---
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
 
 ## Credits
 * [Connor Burgess](mailto:connor@fictiontribe.com) - [<img src="./src/images/github-icon.svg">](http://github.com/connorburgess)
 * [Misha Petrov](mailto:misha@fictiontribe.com) - [<img src="./src/images/github-icon.svg">](http://github.com/mishapetrov)
 * Insiration from [Static Site Boilerplate](https://github.com/ericalli/static-site-boilerplate)
 
-
+---
 
 ## License
 ```
 MIT
 ```
+
+---
+## Fiction Tribe ®
+<img alt="FictionTribe Logo" src="https://mishapetrov.github.io/Contrast.js/img/ft-logo.png" width="100">  
+
+Created at <a style="color:#52337c;" href="https://fictiontribe.com">Fiction Tribe ®</a> in Portland, OR
+
+---
