@@ -57,7 +57,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Credits
 - [@connorburgess](https://github.com/connorburgess)
 - [@mishapetrov](https://github.com/mishapetrov)
-- Insiration from [Static Site Boilerplate](https://github.com/ericalli/static-site-boilerplate)
+- Inspiration from [Static Site Boilerplate](https://github.com/ericalli/static-site-boilerplate)
 
 ---
 

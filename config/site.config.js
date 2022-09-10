@@ -2,7 +2,7 @@ const path = require("path");
 
 const config = {
   title: "Fiction Tribe Webpack", //Title
-  description: "A creative agency landing page boilerplate with Webpack.", //Meta Description
+  description: "A creative agency landing page boilerplate with webpack.", //Meta Description
   template: path.resolve(__dirname, "../src/index.html"), //Input file
   filename: "index.html", // Output file
   charset: 'utf-8', //Meta tag injected into HTML
@@ -14,7 +14,7 @@ const config = {
   ogImageLink: "https://i.imgur.com/X3GMYrh.png",
   // OG Meta data (Twitter)
   ogTwitterCard: "summary_large_image",
-  ogTwitterTitle: "Fiction Tribe Webpack v5 Boilerplate",
+  ogTwitterTitle: "Fiction Tribe Webpack",
   ogTwitterDescription: "A creative agency landing page boilerplate with webpack.",
   ogTwitterImage: "https://i.imgur.com/X3GMYrh.png",
 
