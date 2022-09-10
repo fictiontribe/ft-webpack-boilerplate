@@ -27,7 +27,7 @@ npm install
 
 ## Usage
 
-Spin up a development server:
+Start a development server:
 
 ```
 npm run start
@@ -38,9 +38,9 @@ Create a production build:
 ```
 npm run build
 ```
-To deploy site, updatet script in package.json 
+To deploy site, update deploy script in package.json 
 ```
-"deploy": "surge --project ./dist/ --domain YOURSITENAME.surge.sh",
+"deploy": "surge --project ./dist/ --domain YOUR-SITE-NAME-HERE.surge.sh",
 ```
 Deploy to surge:
 
