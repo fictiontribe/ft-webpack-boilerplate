@@ -1,36 +1,46 @@
 // Font family variables
+$GilroyLight: "Gilroy Light";
 $GilroyRegular: "Gilroy Regular";
+$GilroySemiBold: "Gilroy SemiBold";
 $GilroyBold: "Gilroy Bold";
 $GilroyExtraBold: "Gilroy ExtraBold";
-$GilroyLight: "Gilroy Light";
+$GilroyBlack: "Gilroy Black";
+$MonumentUltraBold: "MonumentExtended UltraBold";
 
 // Define font families and font sizes
 section {
   h1 {
     white-space: normal;
-    font-family: $GilroyExtraBold;
-    font-size: 55px;
+    font-family: $MonumentUltraBold;
+    font-size: 80px;
     @media (max-width: 1024px) {
-      font-size: 34px;
+      font-size: calc(80px * 0.81);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(80px * 0.70);
     }
     @media (max-width: 680px) {
-      font-size: 32px;
+      font-size: calc(80px * 0.47);
+    }
+    @media (max-width: 450px) {
+      font-size: calc(80px * 0.31);
     }
   }
   h2 {
-    font-family: $GilroyExtraBold;
-    font-size: 45px;
+    font-family: $MonumentUltraBold;
+    font-size: 50px;
+    line-height: 1.2;
     @media (max-width: 1024px) {
       font-size: 28px;
     }
     @media (max-width: 680px) {
-      font-size: 26px;
+      font-size: 20px;
       line-height: 1.2em;
     }
   }
   h3 {
-    font-family: $GilroyExtraBold;
-    font-size: 22px;
+    font-family: $GilroySemiBold;
+    font-size: 26px;
     @media (max-width: 1024px) {
       font-size: 18px;
     }
@@ -40,8 +50,8 @@ section {
   }
 
   p {
-    font-family: $GilroyLight;
-    font-size: 20px;
+    font-family: $GilroySemiBold;
+    font-size: 26px;
     @media (max-width: 1024px) {
       font-size: 16px;
     }
@@ -51,55 +61,126 @@ section {
     }
   }
   .grid-item {
+    h3 {
+      font-family: $GilroyBlack;
+    }
     p {
-      font-family: $GilroyLight;
-      font-size: 18px;
-      line-height: 1.5em;
+      font-family: $GilroySemiBold;
+      font-size: 16px;
+      line-height: 22px;
       @media (max-width: 1024px) {
-        font-size: 16px;
+        font-size: 15px;
       }
       @media (max-width: 680px) {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
 
-  button {
-    font-family: $GilroyExtraBold;
-    font-size: 18px;
+  .btn,
+  .alt-btn {
+    font-family: $GilroyBold;
+    font-size: 12px;
     cursor: pointer;
     @media (max-width: 680px) {
-      font-size: 16px;
+      font-size: 12px;
     }
+    @media (max-width: 370px) {
+      font-size: 10px;
+    }
+  }
+  .alt-btn {
   }
 }
 
 // Footer
 footer {
   p {
-    font-family: $GilroyBold;
-    font-size: 18px;
+    font-family: $GilroySemiBold;
+    font-size: 16px;
     @media (max-width: 768px) {
       font-size: 14px;
     }
   }
+  .copyright-and-license {
+    font-family: $GilroyLight;
+  }
   .scroll-to-top {
     @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// Section Overrides
+section#intro {
+  h2 {
+    font-family: $GilroySemiBold;
+    font-size: 40px;
+    @media (max-width: 1024px) {
+      font-size: 22px;
+    }
+    @media (max-width: 680px) {
+      font-size: 20px;
+      line-height: 1.2em;
+    }
+  }
+}
+
+section#setup {
+  h2 {
+    font-size: 28px;
+    margin-top: 68.6px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-family: $GilroyBlack;
+    font-size: 26px;
+    @media (max-width: 680px) {
+      font-size: 18px;
+    }
+  }
+  p {
+    font-family: $GilroySemiBold;
+    font-size: 26px;
+    @media (max-width: 680px) {
       font-size: 18px;
     }
   }
 }
 
+section#features {
+  .features-grid {
+    h3 {
+      font-size: 18px;
+    }
+    @media (max-width: 680px) {
+      h3 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 btn {
-  font-family: $GilroyRegular;
+  font-family: $GilroyRegular !important;
 }
 
 .language-bash {
   font-family: $GilroyBold;
   font-size: 18px;
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 15px;
   }
+}
+
+.ft-github {
+  font-family: $GilroyBold;
+  font-size: 10px;
 }
 // Define Font Faces
 @font-face {
@@ -115,6 +196,12 @@ btn {
   font-style: normal;
 }
 @font-face {
+  font-family: "Gilroy SemiBold";
+  src: url("../fonts/GilroySemiBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: "Gilroy Bold";
   src: url("../fonts/GilroyBold.otf") format("opentype");
   font-weight: bold;
@@ -123,6 +210,18 @@ btn {
 @font-face {
   font-family: "Gilroy ExtraBold";
   src: url("../fonts/GilroyExtraBold.otf") format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Black";
+  src: url("../fonts/GilroyBlack.otf") format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonumentExtended UltraBold";
+  src: url("../fonts/MonumentExtended-Ultrabold.otf") format("opentype");
   font-weight: bolder;
   font-style: normal;
 }

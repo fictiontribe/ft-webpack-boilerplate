@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollToPlugin);
 // Class for common reusable GSAP animations
 export class GsapReusable {
   //Adds a subtle vertical animation to all desired headings
-  static headingScrolls() {
+
+  static headingScrolls(timeline) {
     gsap.utils.toArray("h1, h2").forEach((heading) => {
-      gsap.fromTo(
+      timeline.fromTo(
         heading,
         { y: 12 },
         {
@@ -30,9 +31,9 @@ export class GsapReusable {
   }
 
   //Adds a subtle fade to all desired elements.
-  static elementFades() {
+  static elementFades(timeline) {
     gsap.utils.toArray("section").forEach((section) => {
-      gsap.from(section.querySelectorAll("h2, h3, p, img:not(.logo)"), {
+      timeline.from(section.querySelectorAll("h2, h3, p, img:not(.logo)"), {
         scrollTrigger: section,
         autoAlpha: 0,
         y: 25,
