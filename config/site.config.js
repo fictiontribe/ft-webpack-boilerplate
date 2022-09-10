@@ -10,12 +10,12 @@ const config = {
   // OG Meta data (Facebook)
   ogType: "website",
   ogTitle: "Fiction Tribe Webpack",
-  ogDescription: "A creative agency landing page boilerplate with webpack.",
+  ogDescription: "A creative agency landing page boilerplate with Webpack.",
   ogImageLink: "https://i.imgur.com/X3GMYrh.png",
   // OG Meta data (Twitter)
   ogTwitterCard: "summary_large_image",
-  ogTwitterTitle: "Fiction Tribe Webpack v5 Boilerplate",
-  ogTwitterDescription: "A creative agency landing page boilerplate with webpack.",
+  ogTwitterTitle: "Fiction Tribe Webpack",
+  ogTwitterDescription: "A creative agency landing page boilerplate with Webpack.",
   ogTwitterImage: "https://i.imgur.com/X3GMYrh.png",
 
   // Analytics
