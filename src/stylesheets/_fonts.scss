@@ -105,15 +105,15 @@ footer {
   .copyright-and-license {
     font-family: $GilroyLight;
   }
-  .scroll-to-top {
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
-  }
+
 }
 
 // Section Overrides
 section#intro {
+  .v5-span {
+    font-family: "Gilroy Bold";
+    font-size: 18px;
+  }
   h2 {
     font-family: $GilroySemiBold;
     font-size: 40px;
@@ -170,11 +170,14 @@ btn {
   font-family: $GilroyRegular !important;
 }
 
-.language-bash {
-  font-family: $GilroyBold;
-  font-size: 18px;
+body {
+  font-family: $GilroyRegular !important;
+}
+
+.scroll-to-top {
+  font-size: 12px;
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -191,37 +194,37 @@ btn {
 }
 @font-face {
   font-family: "Gilroy Regular";
-  src: url("../fonts/GilroyRegular.otf") format("opentype");
+  src: url("../fonts/GilroyRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy SemiBold";
-  src: url("../fonts/GilroySemiBold.otf") format("opentype");
+  src: url("../fonts/GilroySemiBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy Bold";
-  src: url("../fonts/GilroyBold.otf") format("opentype");
+  src: url("../fonts/GilroyBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy ExtraBold";
-  src: url("../fonts/GilroyExtraBold.otf") format("opentype");
+  src: url("../fonts/GilroyExtraBold.woff") format("woff");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy Black";
-  src: url("../fonts/GilroyBlack.otf") format("opentype");
+  src: url("../fonts/GilroyBlack.woff") format("woff");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
   font-family: "MonumentExtended UltraBold";
-  src: url("../fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+  src: url("../fonts/MonumentExtended-Ultrabold.woff") format("woff");
   font-weight: bolder;
   font-style: normal;
 }

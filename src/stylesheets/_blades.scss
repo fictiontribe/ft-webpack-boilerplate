@@ -142,6 +142,10 @@ section#features {
       @media (min-width: 680px) {
         max-width: 250px;
       }
+      @media (max-width: 679px) {
+        max-width: 380px;
+        margin: auto;
+      }
       h3 {
         text-tranform: uppercase;
       }
@@ -354,7 +358,6 @@ section#intro {
     max-width: 50%;
     flex-direction: column;
     .v5-span {
-      font-family: "Gilroy Bold";
       .v5  {
         margin-right: 33.5px;
         &:before {
@@ -364,7 +367,7 @@ section#intro {
           position: absolute;
           margin-left: 23px;
           display: block;
-          margin-top: 9px;
+          margin-top: 11px;
         }
 
       }
