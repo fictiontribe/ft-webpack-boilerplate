@@ -17,12 +17,13 @@ const config = {
   ogTwitterTitle: "Fiction Tribe Webpack",
   ogTwitterDescription: "A creative agency landing page boilerplate with webpack.",
   ogTwitterImage: "https://i.imgur.com/X3GMYrh.png",
-
   // Analytics
   googleAnalyticsId: "", //G-XXXXXXXXXX
   googleTagManagerId: "", //GTM-XXXXXXX
 
   env: process.env.NODE_ENV, //Development or Production
+  productionPublicFolder: "./", //Build script builds dist for relative paths by default
+
   
   //Default directories
   paths: {

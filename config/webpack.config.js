@@ -18,7 +18,7 @@ module.exports = {
 
   output: {
     path: config.paths.dist,
-    publicPath: "/",
+    publicPath: process.env.NODE_ENV === "production" ? config.productionPublicFolder : "/",
     filename: "[name].bundle.js",
   },
 
