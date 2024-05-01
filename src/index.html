@@ -5,7 +5,7 @@
 
   <!-- Title and Meta Tags -->
   <title>${require("../config/site.config.js").title}</title>
-  <meta name="description" content="${require('../config/site.config.js').title}" />
+  <meta name="description" content="${require('../config/site.config.js').description}" />
   ${require('../config/site.config.js').charset ? `
   <meta charset="${require('../config/site.config.js').charset}">` : ""}
   ${require('../config/site.config.js').viewport ? require('../config/site.config.js').viewport : ""}
