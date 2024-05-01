@@ -3,7 +3,7 @@
 ![Screenshot](https://i.imgur.com/X3GMYrh.png)
 
 A creative agency landing page boilerplate with webpack. <br/>
-### [Check out our page](https://ftwebpackboilerplatev2.surge.sh/) <br/> <br/>
+### [Check out our page](https://old.fictiontribe.com/os/webpack-boilerplate/) <br/> <br/>
 
 ## Installation
 Clone the boilerplate:
